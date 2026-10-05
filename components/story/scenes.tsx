@@ -125,7 +125,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
             lines={[
               'We were in the same guild.',
               <>We knew of each other, but we weren&apos;t really close.</>,
-              'Then somehow, we ended up playing 3v3 PvP together.',
+              'Then somehow, we ended up playing PvP together.',
             ]}
           />
         </div>
@@ -133,7 +133,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
           <Hand>what do you think happened next?</Hand>
         </Beat>
         <Beat at={5} step={step} as="div" className="flex w-full max-w-sm flex-col gap-3">
-          <ChoiceButton onClick={() => go('start-pvp')}>A. We became PvP demons</ChoiceButton>
+          <ChoiceButton onClick={() => go('start-pvp')}>A. We became PvP buddies</ChoiceButton>
           <ChoiceButton onClick={() => go('start-talk')}>B. We started talking more</ChoiceButton>
           <ChoiceButton onClick={() => go('start-both')}>C. Somehow… both</ChoiceButton>
         </Beat>
@@ -148,15 +148,15 @@ export const SCENES: Record<SceneId, SceneDef> = {
     Component: ({ step }) => (
       <SceneFrame>
         <Eyebrow>you picked A</Eyebrow>
-        <SceneTitle>PvP demons. Obviously.</SceneTitle>
+        <SceneTitle>PvP buddies. Obviously.</SceneTitle>
         <div className="flex flex-col gap-3 pt-4">
           <Lines
             step={step}
             from={1}
             lines={[
-              'We queued up like we had something to prove.',
-              'Lost a few. Won way more. Blamed lag for the rest.',
-              'And somewhere in between matches, we started talking.',
+              'We queued up for fun and games.',
+              'Lost a few. Won way more. Blamed lag or they use hax for the rest.',
+              'And somewhere along the way, we got a little bit closer and started talking.',
             ]}
           />
         </div>
@@ -180,9 +180,9 @@ export const SCENES: Record<SceneId, SceneDef> = {
             step={step}
             from={1}
             lines={[
-              <>At first it was just callouts and &ldquo;nice one.&rdquo;</>,
-              'Then it was conversations that kept going after the match ended.',
-              <>Then it was conversations that didn&apos;t need a match at all.</>,
+              <>At first it was just cheering and &ldquo;nice one.&rdquo;</>,
+              'Then it was conversations that kept going after the game.',
+              <>Then it was conversations that didn&apos;t need a game at all.</>,
             ]}
           />
         </div>
@@ -206,9 +206,9 @@ export const SCENES: Record<SceneId, SceneDef> = {
             step={step}
             from={1}
             lines={[
-              'We became PvP demons and we started talking more.',
+              'We became PvP buddies and we started talking more.',
               <>Honestly, I&apos;m not sure which one happened first.</>,
-              'One day we were just teammates. Then we were… us.',
+              'We were just playing. Then it just developed along the spent together.',
             ]}
           />
         </div>
