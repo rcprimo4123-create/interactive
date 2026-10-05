@@ -89,7 +89,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
     Component: ({ step, go }) => (
       <SceneFrame className="gap-7">
         <Beat at={0} step={step} as="div">
-          <span className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/[0.03] px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-muted-foreground">
+          <span className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-foreground/3 px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-muted-foreground">
             <span className="size-1.5 rounded-full bg-primary motion-safe:animate-breathe" aria-hidden="true" />
             private lobby · 1 invite
           </span>
@@ -156,7 +156,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
             lines={[
               'We queued up for fun and games.',
               'Lost a few. Won way more. Blamed lag or they use hax for the rest.',
-              'And somewhere along the way, we got a little bit closer and started talking.',
+              'And somewhere along the way, we got a little bit closer.',
             ]}
           />
         </div>
@@ -322,7 +322,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
             <Line className="text-foreground">I didn&apos;t like how that made me feel.</Line>
           </Beat>
         </div>
-        <div aria-hidden="true" className="my-2 h-px w-24 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+        <div aria-hidden="true" className="my-2 h-px w-24 bg-linear-to-r from-transparent via-primary/60 to-transparent" />
         <div className="flex flex-col gap-3">
           <Lines step={step} from={5} lines={['That was probably when I realized I was already in too deep.']} />
           <Beat at={6} step={step}>
@@ -448,7 +448,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
                   className={cn(
                     'max-w-[85%] rounded-2xl px-4 py-2.5 text-left text-lg leading-snug md:text-xl',
                     i % 2 === 0
-                      ? 'rounded-bl-sm border border-foreground/10 bg-foreground/[0.06] text-foreground/90'
+                      ? 'rounded-bl-sm border border-foreground/10 bg-foreground/6 text-foreground/90'
                       : 'rounded-br-sm bg-primary/20 text-foreground',
                   )}
                 >
@@ -539,7 +539,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
           <div key="reveal" className="relative flex flex-col items-center gap-6">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute left-1/2 top-1/3 size-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl motion-safe:animate-breathe"
+              className="pointer-events-none absolute left-1/2 top-1/3 size-112 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl motion-safe:animate-breathe"
             />
             <h1 className="relative font-serif text-6xl font-semibold text-foreground drop-shadow-[0_0_30px_rgba(244,164,178,0.45)] motion-safe:animate-reveal sm:text-8xl md:text-9xl">
               I LIKE YOU.
