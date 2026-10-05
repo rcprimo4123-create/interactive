@@ -261,7 +261,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
         <SceneFrame>
           <SceneTitle>I told myself it wasn&apos;t anything.</SceneTitle>
           <div className="flex flex-col gap-2 pt-3">
-            <Lines step={step} from={1} lines={[<>I wasn&apos;t looking for a crush.</>, <>I wasn&apos;t looking for a relationship.</>]} />
+            <Lines step={step} from={1} lines={[<>I wasn&apos;t looking for anything.</>, <>I wasn&apos;t looking for a relationship.</>]} />
             <Beat at={3} step={step} className="pt-2 text-lg italic text-muted-foreground">
               So I kept telling myself…
             </Beat>
