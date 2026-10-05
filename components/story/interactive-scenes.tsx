@@ -298,10 +298,10 @@ export function FinalQuestion({ step, go }: SceneProps) {
 
       <Beat at={3} step={step} as="div" className="flex w-full max-w-md flex-col gap-3 pt-2">
         <ChoiceButton onClick={() => go('ans-official')} className="text-left">
-          <Heart className="mr-2 inline size-4 -translate-y-px text-primary" aria-hidden="true" />Yes — let&apos;s make it official.
+          <Heart className="mr-2 inline size-4 -translate-y-px text-primary" aria-hidden="true" />Yes! let&apos;s make it official.
         </ChoiceButton>
         <ChoiceButton onClick={() => go('ans-slow')} className="text-left">
-          <span className="mr-2 text-accent" aria-hidden="true">→</span>Yes — but let&apos;s take it slow.
+          <span className="mr-2 text-accent" aria-hidden="true">→</span>Yes! but let&apos;s take it slow.
         </ChoiceButton>
         <ChoiceButton onClick={() => go('ans-time')} className="text-left">
           <span className="mr-2 text-muted-foreground" aria-hidden="true">…</span>I need some time to think.
