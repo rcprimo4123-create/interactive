@@ -580,7 +580,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
           </div>
         ) : (
           <div key="b" className="flex flex-col gap-3 pt-4">
-            <Lines step={step} from={4} lines={['I want to put a label on this.', 'I want to call this more than just a situationship.']} />
+            <Lines step={step} from={4} lines={['I want to put a label on this.', 'I want to call this more than just something special.']} />
             <Beat at={6} step={step}>
               <Line className="italic text-muted-foreground">And, honestly…</Line>
             </Beat>
