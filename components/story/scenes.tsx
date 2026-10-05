@@ -425,8 +425,8 @@ export const SCENES: Record<SceneId, SceneDef> = {
     pace: 2000,
     Component: ({ step }) => {
       const bubbles = [
-        { time: '7:12 am', text: <>You&apos;re one of the first people I think about when I wake up.</> },
-        { time: '11:58 pm', text: 'And somehow one of the last people I think about before I sleep.' },
+        { time: '7:12 am', text: <>You&apos;re first person I think about when I wake up.</> },
+        { time: '11:58 pm', text: 'And somehow also the last person I think about before I sleep.' },
         { time: 'random tuesday', text: 'You make me smile for absolutely no reason.' },
         { time: 'every notification', text: <>I didn&apos;t know I could look forward to someone&apos;s messages this much.</> },
         { time: 'lately', text: 'I started looking forward to you being part of my day.' },
