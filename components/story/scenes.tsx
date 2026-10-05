@@ -156,7 +156,7 @@ export const SCENES: Record<SceneId, SceneDef> = {
             lines={[
               'We queued up for fun and games.',
               'Lost a few. Won way more. Blamed lag or they use hax for the rest.',
-              'And somewhere along the way, we got a little bit closer.',
+              'And somewhere along the way, we got a little bit closer and we started talking.',
             ]}
           />
         </div>
